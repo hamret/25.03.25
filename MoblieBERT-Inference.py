@@ -4,7 +4,7 @@ import numpy as np
 from transformers import MobileBertForSequenceClassification, MobileBertTokenizer
 from tqdm import tqdm
 from transformers.models.cvt.convert_cvt_original_pytorch_checkpoint_to_pytorch import attention
-from transformers.models.gpt_neox.modeling_gpt_neox import attention_mask_func2
+from transformers.models.gpt_neox.modeling_gpt_neox import attention_mask_func
 
 GPU = torch.cuda.is_available()
 device = torch.device("cuda" if GPU else "cpu")
